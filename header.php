@@ -32,6 +32,36 @@
     
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
+    <!--百度统计-->
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?122c65c6dbd2900393fe6646ed641194";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	<!--百度统计EDN-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62313326-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-62313326-1');
+	</script>
+
+	<!--google ad-->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({
+	          google_ad_client: "ca-pub-1198592826613859",
+	          enable_page_level_ads: true
+	     });
+	</script>
+	<!--google ad end-->
 </head>
 <body>
 
@@ -58,6 +88,9 @@
                     <?php while($pages->next()): ?>
                     <a <?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
                     <?php endwhile; ?>
+                    <a href="https://www.xiaoz.me/" target = "_blank">Blog</a>
+                    <a href="https://imgurl.org/" target = "_blank" rel = "nofollow">免费图床</a>
+                    <a href="https://ip.ttt.sh/" target = "_blank" rel = "nofollow">IP查询</a>
                 </nav> 
             </div>
             <div class="site-search kit-hidden-tb col-3"> <!-- kit-hidden-tb -->

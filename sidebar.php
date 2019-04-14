@@ -6,8 +6,8 @@
     <section class="widget">
         <div class="info-header" style="background-image:url('<?php _e($this->options->siteUrl() . date('Ymd') . '.jpg'); ?>');">
             <span class="info-header-img">
-                <a href="<?php $this->options->adminUrl(); ?>" target="_blank">
-                    <img src="<?php $this->options->themeUrl('img/header.jpg'); ?>">
+                <a href="<?php $this->options->adminUrl(); ?> data-no-instant" target="_blank">
+                    <img src="<?php $this->options->themeUrl('img/my120.jpg'); ?>">
                 </a>
             </span>
         </div>
@@ -15,9 +15,9 @@
             <?php $this->options->description() ?>
         </div>
         <div class="follow-me">
-            <a href="https://github.com/WarnerYang" target="_blank">github</a>
-            <a href="https://yanghuaqiang.com/" target="_blank">site</a>
-            <a href="https://weibo.com/3880708094" target="_blank">weibo</a>
+            <a href="https://github.com/helloxz" target="_blank" rel = "nofollow">Github</a>
+            <a href="https://www.xiaoz.me/" target="_blank">Blog</a>
+            <a href="https://weibo.com/337003006" target="_blank" rel = "nofollow">Weibo</a>
         </div>
     </section>
     <?php if (isset($this->options->plugins['activated']['Views'])): ?>
@@ -69,6 +69,21 @@
     </section>
     <?php endif; ?>
 
+	<section class="widget">
+		<h3 class="widget-title">友情链接</h3>
+        <ul class="widget-list">
+            <li><a href="https://www.xiaoz.me/" title="wordpress教程" target="_blank">WordPress教程</a></li>
+            <li><a href="http://www.dayue8.com/" title="答曰" target="_blank">答 曰</a></li>
+            <li><a href="http://www.vpsjz.com/" title="答曰" target="_blank">VPSJZ.COM-VPS建站</a></li>
+            <li><a href="http://www.52zd.com/" title="CJ联盟操作" target="_blank">CJ联盟操作</a></li>
+            <li><a href="http://blog.javazygx.cn/" title="java资源共享博客" target="_blank">java资源共享博客</a></li>
+            <li><a href="http://www.033.info/" title="DigitalOcean vps" target="_blank">DigitalOcean vps</a></li>
+            <li><a href="https://qblog.org/" title="阿Q博客" target="_blank">阿Q博客</a></li>
+            <li><a href="https://www.tracymc.cn/" title="Tracymc" target="_blank">Tracymc</a></li>
+            <li><a href="https://www.chenweiliang.com/" title="营销" target="_blank">营销</a></li>
+        </ul>
+	</section>
+	
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
     <section class="widget">
         <h3 class="widget-title">
@@ -86,7 +101,7 @@
         <h3 class="widget-title">
             <?php _e('其它'); ?>
         </h3>
-        <ul class="widget-list">
+        <ul class="widget-list" data-no-instant>
             <?php if ($this->user->hasLogin()): ?>
             <li class="last"><a href="<?php $this->options->adminUrl(); ?>">
                     <?php _e('进入后台'); ?> (
@@ -101,7 +116,6 @@
                     <?php _e('文章 RSS'); ?></a></li>
             <li><a href="<?php $this->options->commentsFeedUrl(); ?>">
                     <?php _e('评论 RSS'); ?></a></li>
-            <li><a href="http://www.typecho.org" target="_blank">Typecho</a></li>
         </ul>
     </section>
     <?php endif; ?>
