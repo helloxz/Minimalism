@@ -6,7 +6,7 @@
     <section class="widget">
         <div class="info-header" style="background-image:url('<?php _e($this->options->siteUrl() . date('Ymd') . '.jpg'); ?>');">
             <span class="info-header-img">
-                <a href="<?php $this->options->adminUrl(); ?> data-no-instant" target="_blank">
+                <a href="<?php $this->options->adminUrl(); ?>" data-no-instant target="_blank">
                     <img src="<?php $this->options->themeUrl('img/my120.jpg'); ?>">
                 </a>
             </span>
