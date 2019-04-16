@@ -31,6 +31,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
         </article>
 	<?php endwhile; ?>
     <?php $this->pageNav('上一页', '下一页'); ?>
+    <div class="gg2">
+	    <a href="https://dwz.ovh/vultr" target="_blank" rel="nofollow noopener"><img src="https://cdn.xiaoz.me/wp-content/uploads/2019/04/banner_11.png"></a>
+    </div>
 </div><!-- end #main-->
 
 <?php $this->need('sidebar.php'); ?>

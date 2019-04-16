@@ -20,6 +20,11 @@
             <a href="https://weibo.com/337003006" target="_blank" rel = "nofollow">Weibo</a>
         </div>
     </section>
+    <section class="widget">
+        <div class = "gg1">
+	        <a href="https://e.aiguobit.com/?from=xiaoz" target="_blank" rel="nofollow noopener"><img src="https://cdn.xiaoz.me/wp-content/uploads/2019/04/medish.png"></a>
+        </div>
+    </section>
     <?php if (isset($this->options->plugins['activated']['Views'])): ?>
     <section class="widget">
         <h3 class="widget-title">

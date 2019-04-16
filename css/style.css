@@ -888,3 +888,13 @@ table th, table td {
 		max-width: 1000px;
 	}
 }
+
+.gg1 img{
+	max-width:100%;
+}
+.gg2{
+	padding-top:1em;
+}
+.gg2 img{
+	max-width:100%;
+}

@@ -21,7 +21,7 @@
     <!-- 使用url函数转换相关路径 -->
     <link href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>?v=1.1">
     <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css">
     
 
